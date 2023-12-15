@@ -53,3 +53,8 @@ export function checkGuess(guess, answer) {
 
   return result;
 }
+
+
+export function checkLetter(letter, index, answer) {
+  return 
+}

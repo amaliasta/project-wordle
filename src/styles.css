@@ -219,6 +219,66 @@ h1 {
   margin-bottom: 0.5em;
 }
 
+
+/* Keyboard styles */
+
+.keyboard-wrapper {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 4px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.key {
+  position: relative;
+  width: 9%;
+  display: grid;
+  place-content: center;
+  aspect-ratio: 1 / 1;
+  border: 2px solid var(--color-gray-700);
+  border-radius: 4px;
+  font-size: 1rem;
+  z-index: -1;
+}
+
+.key.correct {
+  background: var(--color-success);
+  border-color: var(--color-success);
+  color: white;
+}
+.key.incorrect {
+  background: var(--color-gray-300);
+  border-color: var(--color-gray-300);
+  color: white;
+}
+.key.misplaced {
+  background: var(--color-warning);
+  border-color: var(--color-warning);
+  color: white;
+}
+
+.button {
+  border: 2px solid var(--color-gray-900);
+  border-radius: 4px;
+  font-size: 1rem;
+  padding: 5px 15px;
+  transition: all .5s ease;
+}
+
+.button:hover {
+  background-color: var(--color-gray-900);
+  color: var(--color-gray-100);
+}
+
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+
 /*
   Keyframe animations
 */
